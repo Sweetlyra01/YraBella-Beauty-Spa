@@ -3,7 +3,7 @@
         "name" : "Skin Scrubber",
         "category" : "",
         "price" : "50.25",
-        "imgSrc" : "../../assets/images/skinScrubber.jpg"
+        "imgSrc" : "assets/images/skinScrubber.jpg"
     },
     {
         "name" : "Facial toner",
@@ -45,6 +45,6 @@
         "name" : "Facial Cleanser",
         "category" : "",
         "price" : "25.00",
-        "imgSrc" : "assets/images/FacialCleanser.jpg"
+        "imgSrc" : "assets/images/facialCleanser.jpg"
     }   
 ]
