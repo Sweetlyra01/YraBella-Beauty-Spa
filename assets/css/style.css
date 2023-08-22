@@ -1,0 +1,1575 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Great+Vibes&family=IM+Fell+Great+Primer+SC&family=Open+Sans:wght@300&family=Playball&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.style-for-logo {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: pink;
+  /* background: linear-gradient(rgb(220, 93, 163),rgb(176, 69, 194)); */
+  color: black;
+  z-index: 1;
+}
+.navbar2 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: pink;
+  color: black;
+  z-index: 1;
+}
+.nav-links a {
+  color: black;
+  text-decoration: none;
+}
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+  z-index: 1;
+}
+.menu li:hover {
+  background-color:rgb(245, 205, 212);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.menu li {
+  display: inline;
+  padding: 5px 5px;
+}
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+.dropdown {
+  background: pink;
+  padding: 1em 0;
+  position: absolute;
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+  left: 0;
+  text-decoration: none;
+}
+.dropdown li + li {
+  margin-top: 10px;
+}
+.dropdown li {
+  display: block;
+  padding: 0.5em 1em;
+  width: 200px;
+  text-align: center;
+}
+.dropdown li:hover {
+  background-color:rgb(245, 205, 212);
+}
+.services:hover .dropdown {
+  display: block;
+}
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+  display: none;
+} 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+.header {
+  height: calc(100vh - 100px);
+  background-image: url(../images/Header-banner.png);
+  position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.overlay {
+  height: calc(100vh - 100px);
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  color: gray ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-text {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.overlay .overlay-subcontent {
+  font-size: 70px;
+  font-family: 'Great Vibes', cursive;
+  text-shadow: 1px 1px 1px 1px;
+}
+.bannerButtons {
+  display: flex;
+  margin-top: 30%;
+  align-items: end;
+}
+.book-an-appointment-btn {
+  color: black;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 25px;
+  background-color:white;
+  margin-right: 10px;
+}
+.book-an-appointment-btn:hover {
+  color: black;
+  border-radius: 5px;
+  background-color:pink;
+}
+.checkout-promos-btn{
+  color: white;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 25px;
+  background: pink;
+}
+.checkout-promos-btn:hover {
+  color: black;
+  border-radius: 5px;
+  background-color: rgb(236, 175, 185);
+}
+.ourServices-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  background:pink;
+}
+.ourServices-section span {
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+}
+.ourServices {
+  margin-top: 50px;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(250, 179, 191);
+  box-shadow: 1px 1px 1px 2px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container a{
+  color: black;
+}
+.container img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+.container:hover {
+  background-color: pink;
+  box-shadow: 3px 3px 3px 3px rgb(100, 91, 91);
+}
+.box-for-facial-care-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-for-hair-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-for-body-massage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-for-nail-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* About Us section starts here  */
+.about-us {
+  height:calc(100vh -100px);
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us span{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+} 
+.about-us p {
+  margin-top: 30px;
+  font-size: 20px;
+  max-width: 80%;
+}
+.people-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.people {
+  max-width: 100%;
+  margin-top: 20px;
+  border: 1px solid gray;
+  background-color: pink;
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.people .photo {
+  margin: 20px;
+  width: 150px;
+  height: 180px;
+  border: 1px solid gray;
+  border-radius: 100%;
+}
+.photo1 {
+  background-image: url(../images/evens.jpg);
+  background-size: cover;
+}
+.photo2 {
+  background-image: url(../images/evens.jpg);
+  background-size: cover;
+}
+.people span {
+  font-size: 30px;
+}
+.about-us-btns {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.ourLocationBtn {
+  border: 2px solid gray;
+  font-size: 35px;
+  margin-right:  10px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  background: transparent;
+  font-family: 'Open Sans', sans-serif;
+}
+.ourLocationBtn:hover {
+  background-color:rgb(245, 205, 212);
+}
+.virtualTourBtn {
+  border: 2px solid gray;
+  font-size: 35px;
+  margin-right:  10px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+}
+.virtualTourBtn:hover {
+  background-color:rgb(245, 205, 212);
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 767px) {
+  .menu {
+   display:none;
+   position: absolute;
+   background-color: rgb(250, 179, 191);
+   right: 0;
+   left: 0;
+   text-align: center;
+   padding: 16px 0;
+   }
+  .menu li {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+   }
+  .menu li:hover {
+     display: inline-block;
+     background-color: pink;
+     transition: 0.3s ease;
+   }
+  .menu li + li {
+     margin-top: 12px;
+   }
+ 
+  input[type=checkbox]:checked ~ .menu {
+     display: block;
+   }
+ 
+  .hamburger {
+     display: block;
+   }
+ 
+  .dropdown {
+     top: 30px;
+   }
+ 
+  .dropdown li:hover {
+     background-color: gray;
+   }
+  .header {
+    height: calc(50vh - 100px);
+   }
+  .overlay {
+     height: calc(50vh - 100px);
+     font-size:40px;
+     align-items: center;
+     color: white;
+   }
+  .overlay .overlay-subcontent {
+    font-size: 20px;
+   }
+  .book-an-appointment-btn {
+    padding: 5px;
+    font-size: 12px;
+   }
+   .checkout-promos-btn{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .sliderNavb {
+    font-size: 15px;
+   }
+   .ourServices-section {
+    height: 50vh;
+   }
+   .ourServices-section span{
+    font-size: 30px;
+   }
+   .ourServices {
+    font-size: 10px;
+    margin-top: 10px;
+   }
+   .container {
+    max-width: 50%;
+    padding: 10px;
+    box-shadow: 3px 3px 1px 1px gray;
+   }
+   .container:hover {
+    box-shadow: 3px 3px 3px 2px;
+  }
+   .container img {
+    width: 50px;
+  }
+  .about-us {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10 auto;  
+  }
+  .about-us span {
+    font-size: 30px;
+  }
+  .about-us p {
+    font-size: 15px;
+  }
+  .people-section {
+    margin: 50px;
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+  }
+  .people .photo {
+    display: flex;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: yellow;
+  }
+  .people span {
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+  .box-for-facial-care-services {
+    display: flex;
+    flex-direction: row;
+  }
+  .box-for-hair-services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .box-for-body-massage {
+    display: flex;
+    flex-direction: row;
+  }
+  .box-for-nail-services {
+    display: flex;
+    flex-direction: row;
+  }
+  .ourLocationBtn {
+    font-size: 15px;
+  }
+  .virtualTourBtn {
+    font-size: 15px;
+  }
+  .style-for-logo {
+    display: none;
+  }
+  .bannerButtons {
+    display: flex;
+    margin-top: 110px;
+    justify-content: space-between;
+  }
+ }
+
+/* ourStaff Section starts here */
+.OusStaff1 {
+  height: calc(100vh- 100px);
+}
+.Ourstaff {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  max-width: 100%;
+  
+}
+.ourStaff-span{
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  bottom: 0;
+} 
+.Ourstaff img {
+  width: 200px;
+  height: 230px;
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px pink;
+  margin-right: 15px;
+}
+.overlayforstaffname{
+  background: transparent;
+  height: 230px;
+  width: 200px;
+  transition: 0.5s;
+  position: absolute;
+}
+.overlayforstaffname:hover {
+  background-color: rgb(0, 0, 0, 0.616);
+  border-radius: 10px;
+}
+.overlayforstaffname p {
+  width: 100%;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 55%;
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlayforstaffname:hover p{
+  bottom: 50%;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  .Ourstaff {
+    height: calc(100vh - 220px);
+  }
+  .ourStaff-span{
+    font-size: 30px;
+  } 
+  .Ourstaff img {
+    width: 110px;
+    height: 100px;
+  }
+  .overlayforstaffname{
+    background: transparent;
+    height: 100px;
+    width: 110px;
+    transition: 0.5s;
+    position: absolute;
+  }
+  .overlayforstaffname p {
+    width: 50%;
+    font-size: 15px;
+  }
+}
+
+
+
+/* footer starts here */
+footer {
+  background: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container-for-footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  justify-content: space-around;
+}
+.container-for-footer-content a {
+  color: white;
+}
+.footer-highlight {
+  box-shadow: 1px 1px 2px gray;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.content-for-footer {
+  display: flex;
+  flex-direction: column;
+}
+.content-for-footer p, dt {
+  font-size: 20px;
+  margin: 5px;
+}
+.follow-us-section {
+  display: flex;
+  justify-content: center;
+
+}
+.follow-us-section i {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px 10px;
+  font-size: 50px;
+}
+.follow-us-section i:hover {
+  border: 5px solid gray;
+}
+.copyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+}
+@media (max-width: 767px) {
+  footer {
+    height: 1000px
+  }
+  .container-for-footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-for-footer {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .footer-highlight {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+
+ /* services-facial-index starts here*/
+ .ourServices-section1 {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+ .facial-services {
+  height: calc(100vh - 120px);
+  background-image: url(../images/Facial-care-banner.png);
+  background-size: cover;
+  position: center;
+  color: white;
+}
+.ourServices1 {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 100px;
+}
+.ourServices1 a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container1 {
+  width: 20%; 
+  margin: 5px;
+  padding: 15px;
+  box-shadow: 3px 3px 3px 1px gray;
+  display: flex;
+  background-color: rgb(250, 179, 191);
+  border: 1px solid white;
+}
+.container1 a{
+  color: white;
+}
+.container1 img {
+  width: 50px;
+  border-radius: 10px;
+}
+.container1:hover {
+  background-color:rgb(245, 205, 212);
+  box-shadow: 3px 3px 3px 3px rgb(100, 91, 91);
+}
+.facial-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.facial-services span{
+  font-size: 70px;
+  font-family: 'Playball', cursive;
+}
+.Facial-services-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.facial-options-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.facial-options-box-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+  font-size: 30px;
+  color: white;
+  background-color:rgb(245, 205, 212);
+}
+.facial-options-box-description {
+  padding: 10px 50px;
+  background-color: white;
+  box-shadow: 3px 1px 5px gray;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 20px;
+}
+.facial-options-box-description img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px;
+}
+.pricesForFacialServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .facial-services {
+    height: calc(100vh - 130px);
+    background-image: url(../images/Facial-care-banner.png);
+    background-size: cover;
+    position: center;
+    color: white;
+  }
+
+  .facial-services span{
+    font-size: 40px;
+  }
+  .container1 {
+    padding: 5px 15px;
+  }
+}
+
+/* Facial Care Services Section Ends Here */
+
+/* Nails Services Section Starts here */
+.Nails-HeroSection {
+  height: calc(100vh - 120px);
+  background-image: url(../images/Nail-banner.png);
+  background-size: cover;
+  position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nailHeroSec-text span{
+  font-size: 80px;
+  color: white;
+  font-family: 'Playball', cursive;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  font-size: 20px;
+}
+.readMoreBtn {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  border: 1px solid white;
+  padding: 10px 20px;
+  justify-content: center;
+}
+.readMoreBtn:hover {
+  background-color: black;
+}
+.nails-options-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+.nails-options-box-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+  font-size: 30px;
+  color: white;
+  background-color:rgb(245, 205, 212);
+}
+.nails-options-box-description {
+  width: 100%;
+  padding: 10px 50px;
+  background-color: white;
+  box-shadow: 3px 1px 5px gray;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nails-options-box-description img {
+  width: 200px;
+  height: 300px;
+}
+.manicureImages {
+  display: flex;
+}
+.NailGel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.NailGelImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.NailGel img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.NailGel img:hover {
+  width: 250px;
+  height: 250px;
+  box-shadow: 1px 2px 3px 1px;
+  margin: 10px;
+}
+.NailArtImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.NailArtImages img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.NailArtImages img:hover {
+  width: 250px;
+  height: 250px;
+  box-shadow: 1px 2px 3px 1px;
+  margin: 10px;
+}
+.pricesForNailsServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.PricesTitle {
+  font-size: 60px;
+  color: gray;
+  font-family: 'Playball', cursive;
+}
+.pricesSection {
+  margin-top: 30px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 2px 1px 1px gray; 
+  background-color:rgb(245, 205, 212);
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  margin: 20px;
+}
+@media (max-width: 767px) {
+  .Nails-HeroSection {
+    height: calc(100vh - 130px);
+    background-image: url(../images/Nail-banner.png);
+    background-size: cover;
+    position: center;
+  }
+  .nailHeroSec-text span{
+    font-size: 40px;
+    color: white;
+    left: 20px;
+  }
+  .nails-options-box-description { 
+    font-size: 15px;
+  }
+  .nails-options-box-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .nails-options-box-description img {
+    width: 100px;
+    height: 100px;
+  }
+  .NailGel img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .NailGel img:hover {
+    width: 80px;
+    height: 80px;
+    box-shadow: 1px 2px 3px 1px;
+  }
+  .NailArtImages img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  .NailArtImages img:hover {
+    width: 55px;
+    height: 55px;
+    box-shadow: 1px 2px 3px 1px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .readMoreBtn {
+    font-size: 20px;
+  }
+  .pricesSection {
+    width: 90%;
+  }
+  .prices {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 10px;
+  }
+}
+/* Nails Services Section Ends here */
+
+/* Body Massage Index Starts Here */
+.bodyMassageHeroSec {
+  height: calc(100vh - 120px);
+  background-image: url(../images/bodyMassageBanner.png);
+  background-size: cover;
+  position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bodyMassageHeroSec-Text {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  color: white;
+  font-family: 'Playball', cursive;
+}
+.bodyMassageTypeTitle {
+  font-size: 40px;
+  font-family: 'Playball', cursive;
+  color: black;
+}
+.bodyMassageOptions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bodyMassageOption {
+  background-color:rgb(245, 205, 212);
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  margin: 10px;
+  font-size: 20px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+.bodyMassageOption img {
+  width: 200px;
+  height: 200px;
+}
+.pricesForBodyMassageServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bookAppointmentNowBtn {
+  font-size: 40px;
+  border: 3px solid;
+  margin: 10px;
+}
+.bookAppointmentNowBtn a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+}
+.bookAppointmentNowBtn a:hover {
+  color: white;
+}
+.bookAppointmentNowBtn:hover {
+  border: 3px solid gray;
+  background: gray;
+  color: white;
+}
+@media (max-width: 767px) {
+  .bodyMassageTypeTitle {
+    font-size: 35px;
+  }
+  .bodyMassageHeroSec {
+    height: calc(100vh - 130px);
+  }
+  .bodyMassageOption img {
+    width: 100px;
+    height: 100px;
+  }
+  .bodyMassageOption {
+    width: 100%;
+    font-size: 15px;
+  }
+  .bookAppointmentNowBtn {
+    font-size: 25px;
+  }
+
+}
+/* Body Massage Index Ends Here */
+
+
+/* Hair Index Starts Here */
+.Hair-HeroSection {
+  height: calc(100vh - 120px);
+  background-image: url(../images/Hair-care-banner.png);
+  background-size: cover;
+  position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hairHeroSec-text span{
+  font-size: 80px;
+  color: white;
+  font-family: 'Playball', cursive;
+  display: flex;
+  justify-content: center;
+}
+.hairServicesSelection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:rgb(245, 205, 212);
+  margin: 10px;
+}
+.hairSectionOption {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px
+}
+.optionContent {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.hairTitleDesign {
+  font-size: 60px;
+  font-family: 'Playball', cursive;
+  display: flex;
+  justify-content: center;
+}
+.hairOptionText {
+  font-size: 20px;
+  font-family: 'Playball', cursive;
+}
+.hairSectionOption img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 3px 2px gray;
+}
+.hairSectionOption p {
+  margin: 30px;
+  font-size: 20px;
+  width: 50%;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.font-size {
+  font-size: 40px;
+  font-family: 'Playball', cursive;
+}
+.womansCut {
+  padding: 20px;
+}
+.pricesForHairServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 767px) { 
+  .hairSectionOption img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 2px gray;
+  }
+  .hairOptionText {
+    display: none;
+  }
+  .hairTitleDesign {
+    font-size: 40px;
+  }
+  .font-size {
+    font-size: 20px;
+  }
+  .hairSectionOption p {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .hairHeroSec-text span{
+    font-size: 35px;
+  }
+}
+/* Hair Index Ends Here */
+
+/* Product Index Strts Here */
+
+/* Product Index Ends Here */
+
+/* Promo Index Starts Here */
+.promos {
+  height: calc(100vh - 100px);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.promos img {
+  width: 100%;
+}
+@media (max-width: 767px) { 
+  .promos {
+    height: calc(50vh - 100px);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Promo Index Ends Here */
+
+/* Location Index Starts Here */
+.locationTitleText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: pink;
+  font-family: 'IM Fell Great Primer SC', serif;
+}
+.locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(245, 205, 212);
+
+}
+.locationImg  {
+  margin: 10px;
+}
+.locationImg img{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+
+}
+.opening-hours-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.opening-hours-text {
+  font-size: 50px;
+}
+.opening-hours-section p {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background: gray;
+
+}
+.timesection {
+  display: flex;
+  margin: 10px;
+}
+.placesText {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Caprasimo', cursive;
+  color: pink;
+}
+.sindangan {
+  display: flex;
+  justify-content: center;
+}
+.placesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  font-size: 25px;
+}
+@media (max-width: 767px) { 
+  .locationTitleText {
+    font-size: 50px;
+  }
+  .locationImg img{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+  
+  }
+  .opening-hours-text {
+    font-size: 30px;
+  }
+  .timesection {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .placesText {
+    font-size: 30px;
+  }
+  .placesSection {
+    font-size: 15px;
+  }
+  .placesSection img {
+    width: 100px;
+  }
+}
+/* Location Index Ends Here */
+
+/* Virtual tour index starts here */
+.virtualTourTitleText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: black;
+  font-family: 'IM Fell Great Primer SC', serif;
+} 
+.receptionSection {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background: linear-gradient(rgb(245, 205, 212),pink);
+}
+.receptionSection img {
+  width: 50%;
+}
+.subText {
+  font-size: 60px;
+  margin-left: 30px;
+  font-family: 'Great Vibes', cursive;
+}
+.facialSection {
+  display: flex;
+  height: 100vh;
+  margin: 20px;
+  background: linear-gradient(rgb(245, 205, 212),pink);
+}
+.facialSection Img{
+  margin-left: 20px;
+}
+.facialSection2  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px auto;
+}
+.facialSectionBigImage {
+  width: 50%;
+}
+.hairSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20px;
+  background: linear-gradient(rgb(245, 205, 212),pink);
+}
+.hairsecImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hairSection img {
+  width: 40%;
+  height: 90%;
+  margin: 10px;
+  border-radius: 10px;
+}
+.nailsSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20px;
+  background: linear-gradient(rgb(245, 205, 212),pink);
+}
+.nailsSection img{
+  width: 50%;
+}
+.bodyMassageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20px;
+  background: linear-gradient(rgb(245, 205, 212),pink);
+}
+.bodyMassageSection img {
+  width: 50%;
+  height: 50%;
+  margin: 20px;
+}
+.kidsSpaceSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  height: 100vh;
+  background: linear-gradient(rgb(245, 205, 212),pink);
+}
+.kidsSpaceImg {
+  display: flex;
+  justify-content: center;
+}
+.kidsSpaceSection img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+@media (max-width: 767px) { 
+  .facialSection {
+    height: 50vh;
+  }
+  .hairSection {
+    display: flex;
+    height: 50vh;
+  }
+  .virtualTourTitleText {
+    font-size: 30px;
+  }
+  .subText {
+    font-size: 24px;
+  }
+  .receptionSection {
+    height: calc(50vh - 80px);
+  }
+  .receptionSection img {
+    width: 50%;
+  }
+  .facialSection Img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nailsSection {
+    height: 50vh;
+  }
+  .bodyMassageSection {
+    height: 50vh;
+  }
+  .bodyMassageSection img{
+    width: 100%;
+  }
+  .kidsSpaceSection img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+  .kidsSpaceSection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .kidsSpaceImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+}
+/* Virtual tour index ends here */
+
+/* Book an appointment css starts here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.banner{
+  background-color:rgb(245, 205, 212);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: 420px 530px;
+   
+}
+.card-img{
+  background: url("../images/Header-banner.png") center/cover no-repeat;
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.banner h2{
+  padding-top: 30px;
+  margin-bottom: 20px;
+  text-shadow: 8px 4px 2px rgba(0, 0, 0, 0.4);
+  font-size: 40px;
+  color: black;
+}
+.card-content{
+  background-color: pink;
+}
+.card-content h3{
+  text-align: center;
+  color: #000;
+  padding: 25px 0 10px 0;
+  font-size:x-large;
+  font-weight:bold;
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.4);
+}
+form {
+  background-color: pink;
+}
+.form-row{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+    
+}
+form select, form input{
+  display: block;
+  width: 90%;
+  margin: 15px 10px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 300; 
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+  color: #242222;
+}
+form input[type = submit]{
+  color: #fff;
+  background: #f2745f;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form input[type = submit]:hover{
+  opacity: 0.9;
+}
+
+/* Style for the "Go Back" link */
+.form-row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.form-row #goBackButton {
+  display: inline-block;
+  background-color: pink;
+  color: #fff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.form-row #goBackButton:hover {
+  background-color: #2980b9;
+}
+
+/* Style for the appointment list container */
+#appointmentList {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.appointment-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #767272;
+  border-radius: 4px;
+}
+
+.appointment-item strong {
+  display: inline-block;
+  width: 180px;
+}
+
+.appointment-item hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    
+    .card-img {
+        height: 330px;
+    }
+    
+    .appointment-item strong {
+        width: 100%;
+    }
+    .banner h2{
+     font-size: 25px;
+}
+}
+/* Book an appointment css ends here */

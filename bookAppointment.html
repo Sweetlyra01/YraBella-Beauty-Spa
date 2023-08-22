@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Set Appointment Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://kit.fontawesome.com/2791784218.js" crossorigin="anonymous"></script> 
+        <script defer src="assets/script/bookAppointment.js"></script>
+    </head>
+    <body>
+        <nav>
+            <span><a href="index.html"><i class="fa-solid fa-house"></i></a>Welcome Customers</span>
+        </nav>
+
+    <section class="banner">
+        <h2>BOOK YOUR APPOINTMENT</h2>
+        <div class="card-container">
+            <div class="card-img">
+                <!-- image here -->
+            </div>
+            <div class="card-content">
+                <h3>SET APPOINTMENT</h3>
+                <form>
+                    <input type="text" placeholder="First Name" id="firstName" required>
+                    <input type="text" placeholder="Last Name" id="lastName" required>
+                    <input type="text" placeholder="Phone Number" id="phoneNumber" required>
+                    <input type="text" placeholder="Email Address" id="emailAddress" required>
+                        
+                    <div class="form-row">
+                        <input type="number" placeholder="How Many Persons?" min="1" id="numberOfPersons">
+                        <label for="scheduleDateTime"></label>
+                        <input type="datetime-local" id="scheduleDateTime" name="schedule">
+                    </div>
+
+                    <div class="form-row" id="serviceSelect">
+                        <select id="selectService">
+                            <option>Facial Services</option>
+                            <option>Hair Services</option>
+                            <option>Body Service</option>
+                            <option>Nail Service</option>
+                        </select>
+                    </div>
+                    <div class="form-row" id="serviceSelect">
+                        <select id="selectService">
+                            <option>Chemical Peeling</option>
+                            <option>Facial Whitening</option>
+                            <option>Threadlift</option>
+                            <option>Auto Roller</option>
+                            <option>Dermal Fillers</option>
+                            <option></option>
+                        </select>
+                    </div>
+                    <div class="form-row" id="branchSelect">
+                        <select id="branchSelect">
+                            <option>Location</option>
+                            <option>SINDANGAN ZAMBOANGA DEL NORTE</option>
+                            <option>LABASON ZAMBOANGA DEL NORTE</option>
+                            <option>TAMPILISAN ZAMBOANGA DEL NORTE</option>
+                            <option>DIPOLOG CITY ZAMBOANGA DEL NORTE</option>
+                        </select>
+                    </div>
+                        
+                    <div class="form-row">
+                        <input type="submit" value="SET SCHEDULE">
+                    </div>
+                </form>
+
+                <div class="form-row">
+                    <a href="index.html" id="goBackButton">Home</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

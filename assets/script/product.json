@@ -1,0 +1,50 @@
+[
+    {
+        "name" : "Skin Scrubber",
+        "category" : "",
+        "price" : "50.25",
+        "imgSrc" : "../../assets/images/skinScrubber.jpg"
+    },
+    {
+        "name" : "Facial toner",
+        "category" : "",
+        "price" : "102.00",
+        "imgSrc" : "assets/images/facialToner.jpg"
+    },
+    {
+        "name" : "Sunscreen",
+        "category" : "",
+        "price" : "15.00",
+        "imgSrc" : "assets/images/FacialSunscreen.jpg"
+    },
+    {
+        "name" : "Moisturizer",
+        "category" : "",
+        "price" : "23.75",
+        "imgSrc" : "assets/images/FacialMoisturizer.jpg"
+    },
+    {
+        "name" : "Facial Oil",
+        "category" : "",
+        "price" : "50.00",
+        "imgSrc" : "assets/images/FacialOil.jpg"
+    },
+    {
+        "name" : "Facial Serum",
+        "category" : "",
+        "price" : "200.50",
+        "imgSrc" : "assets/images/FacialSerum.jpg"
+    },
+    {
+        "name" : "Eye Cream",
+        "category" : "",
+        "price" : "5.50",
+        "imgSrc" : "assets/images/eyeCream.jpg"
+    },
+    {
+        "name" : "Facial Cleanser",
+        "category" : "",
+        "price" : "25.00",
+        "imgSrc" : "assets/images/FacialCleanser.jpg"
+    }   
+]
