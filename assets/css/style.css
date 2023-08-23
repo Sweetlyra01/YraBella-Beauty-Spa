@@ -1779,30 +1779,12 @@ form input[type = submit]{
 form input[type = submit]:hover{
   opacity: 0.9;
 }
-
-/* Style for the "Go Back" link */
-.form-row {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
+.gobackbtn {
+  font-size: 30px;
+  color: pink;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
 }
-.form-row #goBackButton {
-  display: inline-block;
-  background-color: pink;
-  color: #fff;
-  border: none;
-  padding: 7px 14px;
-  border-radius: 4px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-}
-
-.form-row #goBackButton:hover {
-  background-color: #2980b9;
-}
-
 /* Style for the appointment list container */
 #appointmentList {
   margin-top: 20px;
@@ -1860,7 +1842,228 @@ form input[type = submit]:hover{
   transition: background-color 0.3s ease-in-out;
   font-weight: 700;
 }
-
 .login-button:hover {
   background-color: rgb(237, 102, 125);
 }
+/* Sign Up form css starts here */
+.card-img02 img {
+  width: 20%;
+}
+.SignUpTextDesign {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#signupForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+
+}
+.containerForSignUpForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form input {
+  width: 50%;
+  margin: 0 auto; /* Center-align the input fields horizontally */
+  display: flex;
+  align-items: flex-start;
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form select {
+  width: 30%;
+  padding: 8px;
+  margin-bottom: 25px;
+  display: flex;
+  margin-left: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form .bday,
+.form .age,
+.form .gender {
+  width: 30%;
+}
+.gender {
+  display: flex;
+  justify-content: evenly;
+}
+.form .dob {
+  display: flex;
+  justify-content: space-between;
+}
+.form input {
+  width: 90%;
+  margin: 0 auto; /* Center-align the input fields horizontally */
+  display: flex;
+  align-items: flex-start;
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 5px;
+}
+.address {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.address > div {
+  flex: 1;
+  margin-right: 10px;
+}
+.address input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.account {
+  display: flex;
+  justify-content: space-between;
+}
+.account > div {
+  flex: 1;
+  margin-right: 10px;
+}
+.account input[type="email"],
+.account input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.password {
+  display: flex;
+  justify-content: space-between ;
+  margin-bottom: 20px;
+}
+.password > div {
+  flex: 1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.password input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form button {
+  padding: 10px 20px;
+  background-color: rgb(249, 149, 165); 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.form button:hover {
+  background-color: rgb(217, 156, 166);
+}
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(249, 172, 185);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+.custom-button:hover {
+  background-color: rgb(252, 170, 184);
+}
+.dashboard {
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(13, 13, 13, 0.1);
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.dashboard h2 {
+  margin-bottom: 20px;
+}
+
+.dashboard p {
+  margin-bottom: 10px;
+}
+
+.dashboard a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: pink;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.dashboard a:hover {
+  background-color: pink;
+}
+@media screen and (max-width: 768px) {
+  #signupForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px;
+  
+  }
+}
+/* Sign Up form css ends here */
+
+
+/* Log In starts here */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.login-image {
+  width: 20%;
+}
+/* Log In ends here */
