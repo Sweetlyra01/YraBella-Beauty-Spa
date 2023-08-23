@@ -87,6 +87,15 @@ li {
 .services:hover .dropdown {
   display: block;
 }
+.btn-buy{
+  padding: 12px 20px;
+  background-color: #ff89e9;
+  color:#fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
 /* RESPONSIVE NAVBAR MENU STARTS */
 
 /* CHECKBOX HACK */
