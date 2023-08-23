@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         signupForm.addEventListener('submit', function (event) {
             event.preventDefault();
 
-            const selectedRole = signupForm.querySelector('select').value;
+            // const selectedRole = signupForm.querySelector('select').value;
             const firstName = signupForm.querySelector('#firstname').value;
             const lastName = signupForm.querySelector('#lastname').value;
             const birthday = signupForm.querySelector('#birthday').value;
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Create a new user object
             const newUser = {
                 id: userId,
-                role: selectedRole,
+                // role: selectedRole,
                 firstName: firstName,
                 lastName: lastName,
                 birthday: birthday,
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             usersData.push(newUser);
 
-            // Save the updated user data back to localStorage or your backend
+            // Save the updated user data back to localStorage
             localStorage.setItem('users', JSON.stringify(usersData));
 
             alert('Account created successfully!');
