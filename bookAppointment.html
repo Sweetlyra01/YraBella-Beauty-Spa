@@ -10,9 +10,30 @@
         <script defer src="assets/script/bookAppointment.js"></script>
     </head>
     <body>
-        <nav>
-            <span><a href="index.html"><i class="fa-solid fa-house"></i></a>Welcome Customers</span>
-        </nav>
+        <nav class="navbar">
+        <span class="style-for-logo">Y R A _ B E L L A</span>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle">
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <div>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="services">
+                        <a href="#services">SERVICES</a>
+                            <ul class="dropdown">
+                                <li><a href="services-facial-index.html">Facial Services </a></li>
+                                <li><a href="services-hair-index.html">Hair Services</a></li>
+                                <li><a href="services-nails-index.html">Nail Services</a></li>
+                                <li><a href="services-bodyMassage-index.html">Body Massage</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="products-index.html">PRODUCTS</a></li>
+                    <li><a href="#aboutUs">ABOUT US</a></li>
+                    <a href="loginForm.html" class="login-button">Login</a><!--HREF this-->
+                </div>
+            </div>
+        </ul>
+    </nav>
 
     <section class="banner">
         <h2>BOOK YOUR APPOINTMENT</h2>
@@ -66,10 +87,6 @@
                         <input type="submit" value="SET SCHEDULE">
                     </div>
                 </form>
-
-                <div class="form-row">
-                    <a href="index.html" id="goBackButton">Home</a>
-                    </div>
             </div>
         </div>
     </section>

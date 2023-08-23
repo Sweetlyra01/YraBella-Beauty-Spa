@@ -7,11 +7,35 @@
     <script defer src="assets/script/signUp.js"></script>
     <title>Sign up Form</title>
 </head>
-<body>
-    <div class="container">
+<body class="bodyfordashboard">
+    <nav class="navbar">
+        <span class="style-for-logo">Y R A _ B E L L A</span>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle">
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <div>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="services">
+                        <a href="#services">SERVICES</a>
+                            <ul class="dropdown">
+                                <li><a href="services-facial-index.html">Facial Services </a></li>
+                                <li><a href="services-hair-index.html">Hair Services</a></li>
+                                <li><a href="services-nails-index.html">Nail Services</a></li>
+                                <li><a href="services-bodyMassage-index.html">Body Massage</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="products-index.html">PRODUCTS</a></li>
+                    <li><a href="#aboutUs">ABOUT US</a></li>
+                    <a href="loginForm.html" class="login-button">Login</a><!--HREF this-->
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <div class="containerForSignUpForm">
         <div class="form sign-up-form">
-            <h2>Sign Up</h2>
             <form id="signupForm">
+                <h2>Sign Up</h2>
                 <div class="name-container">
                     <div class="fname">
                         <input type="text" id="firstname" placeholder="Firstname" required>
@@ -22,10 +46,8 @@
                 </div>
                 <div class="dob">
                     <div class="bday">
+                        <label>Birthday:</label>
                         <input type="date" id="birthday" placeholder="Birthday" required>
-                    </div>
-                    <div class="age">
-                        <input type="number" id="age" placeholder="Age" required>
                     </div>
                     <div class="gender">
                         <div class="radio-option">
@@ -75,7 +97,6 @@
                 </div>
                 <button type="submit">Create Account</button>
             </form>
-            <a href="loginForm.html" class="custom-button">Login</a>
         </div>
     </div>
 </body>

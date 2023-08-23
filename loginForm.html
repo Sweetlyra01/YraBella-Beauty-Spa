@@ -8,9 +8,33 @@
     <title>Login Form</title>
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar">
+        <span class="style-for-logo">Y R A _ B E L L A</span>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle">
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+                <div>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="services">
+                        <a href="#services">SERVICES</a>
+                            <ul class="dropdown">
+                                <li><a href="services-facial-index.html">Facial Services </a></li>
+                                <li><a href="services-hair-index.html">Hair Services</a></li>
+                                <li><a href="services-nails-index.html">Nail Services</a></li>
+                                <li><a href="services-bodyMassage-index.html">Body Massage</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="products-index.html">PRODUCTS</a></li>
+                    <li><a href="#aboutUs">ABOUT US</a></li>
+                    <a href="loginForm.html" class="login-button">Login</a><!--HREF this-->
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <div class="containerforlogin">
         <div class="form login-form">
-            <h2>User Login</h2>
+            <h2>Login</h2>
             <form id="loginForm">
                 <input type="text" id="username" placeholder="Username" required>
                 <input type="password" id="password" placeholder="Password" required>
