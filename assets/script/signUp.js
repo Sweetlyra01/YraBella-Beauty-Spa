@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const firstName = signupForm.querySelector('#firstname').value;
             const lastName = signupForm.querySelector('#lastname').value;
             const birthday = signupForm.querySelector('#birthday').value;
-            const age = signupForm.querySelector('#age').value;
             const gender = signupForm.querySelector('input[name="gender"]:checked').value;
             const country = signupForm.querySelector('.country input').value;
             const province = signupForm.querySelector('.province input').value;
@@ -40,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 firstName: firstName,
                 lastName: lastName,
                 birthday: birthday,
-                age: age,
                 gender: gender,
                 country: country,
                 province: province,
