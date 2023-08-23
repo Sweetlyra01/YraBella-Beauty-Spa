@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styleForm.css">
+    <script src="assets/script/signUp.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form sign-up-form">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <select required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+                <div class="name-container">
+                    <div class="fname">
+                        <input type="text" id="firstname" placeholder="Firstname" required>
+                    </div>
+                    <div class="lname">
+                        <input type="text" id="lastname" placeholder="Lastname" required>
+                    </div>
+                </div>
+                <div class="dob">
+                    <div class="bday">
+                        <input type="date" id="birthday" placeholder="Birthday" required>
+                    </div>
+                    <div class="age">
+                        <input type="number" id="age" placeholder="Age" required>
+                    </div>
+                    <div class="gender">
+                        <div class="radio-option">
+                            <input type="radio" name="gender" value="male" required>
+                            <label>Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="gender" value="female" required>
+                            <label>Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="country">
+                        <input type="text" placeholder="Country" required>
+                    </div>
+                    <div class="province">
+                        <input type="text" placeholder="Province" required>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="city">
+                        <input type="text" placeholder="City" required>
+                    </div>
+                    <div class="posta">
+                        <input type="text" placeholder="Postal Code" required>
+                    </div>
+                </div>
+                    <div class="country">
+                        <input type="text" placeholder="Barangay" required>
+                    </div>
+                <div class="account">
+                    <div class="email">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="user">
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                </div>
+                <div class="password">
+                    <div class="account_password">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="account_password">
+                        <input type="password" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <a href="loginForm.html" class="custom-button">Login</a>
+        </div>
+    </div>
+</body>
+</html>
