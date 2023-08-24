@@ -1,38 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Set Appointment Form</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <script src="https://kit.fontawesome.com/2791784218.js" crossorigin="anonymous"></script> 
-        <script defer src="assets/script/bookAppointment.js"></script>
-    </head>
-    <body>
-        <nav class="navbar">
-        <span class="style-for-logo">Y R A _ B E L L A</span>
-        <ul class="nav-links">
-          <input type="checkbox" id="checkbox_toggle">
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="menu">
-                <div>
-                    <li><a href="index.html">HOME</a></li>
-                    <li class="services">
-                        <a href="#services">SERVICES</a>
-                            <ul class="dropdown">
-                                <li><a href="services-facial-index.html">Facial Services </a></li>
-                                <li><a href="services-hair-index.html">Hair Services</a></li>
-                                <li><a href="services-nails-index.html">Nail Services</a></li>
-                                <li><a href="services-bodyMassage-index.html">Body Massage</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="products-index.html">PRODUCTS</a></li>
-                    <li><a href="#aboutUs">ABOUT US</a></li>
-                    <a href="loginForm.html" class="login-button">Login</a><!--HREF this-->
-                </div>
-            </div>
-        </ul>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Set Appointment Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/2791784218.js" crossorigin="anonymous"></script>
+    <script defer src="assets/script/bookAppointment.js"></script>
+</head>
+<body>
+    <nav>
+        <span><a href="index.html"><i class="fa-solid fa-house"></i></a>Welcome Customers</span>
     </nav>
 
     <section class="banner">
@@ -48,23 +27,23 @@
                     <input type="text" placeholder="Last Name" id="lastName" required>
                     <input type="text" placeholder="Phone Number" id="phoneNumber" required>
                     <input type="text" placeholder="Email Address" id="emailAddress" required>
-                        
+
                     <div class="form-row">
                         <input type="number" placeholder="How Many Persons?" min="1" id="numberOfPersons">
                         <label for="scheduleDateTime"></label>
                         <input type="datetime-local" id="scheduleDateTime" name="schedule">
                     </div>
 
-                    <div class="form-row" id="serviceSelect">
-                        <select id="selectService">
+                    <div class="form-row" id="serviceSelect1">
+                        <select id="selectService1">
                             <option>Facial Services</option>
                             <option>Hair Services</option>
                             <option>Body Service</option>
                             <option>Nail Service</option>
                         </select>
                     </div>
-                    <div class="form-row" id="serviceSelect">
-                        <select id="selectService">
+                    <div class="form-row" id="serviceSelect2">
+                        <select id="selectService2">
                             <option>Chemical Peeling</option>
                             <option>Facial Whitening</option>
                             <option>Threadlift</option>
@@ -73,7 +52,7 @@
                             <option></option>
                         </select>
                     </div>
-                    <div class="form-row" id="branchSelect">
+                    <div class="form-row" id="branchSelectRow">
                         <select id="branchSelect">
                             <option>Location</option>
                             <option>SINDANGAN ZAMBOANGA DEL NORTE</option>
@@ -82,14 +61,20 @@
                             <option>DIPOLOG CITY ZAMBOANGA DEL NORTE</option>
                         </select>
                     </div>
-                        
+
                     <div class="form-row">
                         <input type="submit" value="SET SCHEDULE">
                     </div>
                 </form>
+
+                <!-- Add the appointment list container -->
+                <div id="appointmentList"></div>
+
+                <div class="form-row">
+                    <a href="index.html" id="goBackButton">Home</a>
+                </div>
             </div>
         </div>
     </section>
-
 </body>
 </html>

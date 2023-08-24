@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         window.location.href = "adminDashboard.html";
                     }
                 } else {
-                    const confirmMessage = "Successfully login! Enjoy Scrolling :P";
+                    const confirmMessage = "Successfully login! Enjoy Scrolling";
                     const userConfirmation = confirm(confirmMessage);
 
                     if (userConfirmation) {
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (forgotPasswordLink) {
         forgotPasswordLink.addEventListener("click", function (event) {
             event.preventDefault();
-            alert("Better Create an Account lol");
+            alert("Sorry, please create an accout first.");
         });
     }
 });
