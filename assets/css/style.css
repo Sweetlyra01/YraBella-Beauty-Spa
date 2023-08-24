@@ -1884,7 +1884,8 @@ form {
 }
 form select, form input{
   display: block;
-  width: 100%;
+  width: 96%;
+  justify-content: center;
   margin: 15px 10px;
   padding: 5px;
   font-size: 15px;
