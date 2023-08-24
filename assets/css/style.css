@@ -268,9 +268,10 @@ body {
 }
 .people-section {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  margin: 40px;
 }
 .people {
   max-width: 100%;
@@ -283,9 +284,8 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 20px;
-  margin-left: 20px;
   padding: 10px 40px;
+  margin: 10px;
 }
 .people .photo {
   margin: 20px;
